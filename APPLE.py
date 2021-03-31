@@ -35,9 +35,10 @@ url = "https://www.apple.com/tw/shop/buy-iphone/iphone-12"
 driver = webdriver.Chrome("./2/chromedriver.exe")
 driver.get(url)
 
+time.sleep(30)
 
-while True:
-    driver.find_element_by_id("Item1-dimensionScreensize-6_1inch").click()
+driver.find_element_by_id('Item1-dimensionScreensize-6_1inch').click()
+
 
 
 driver.execute_script("window.scrollTo(0,200)")
